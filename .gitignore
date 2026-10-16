@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+cad-build.log
+cad-validation.log
+package-verification.json

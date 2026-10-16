@@ -1,0 +1,34 @@
+name: Validate Seizo Nexus CAD release
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'models/**'
+      - 'docs/**'
+      - 'tools/**'
+      - 'README.md'
+      - 'ATTRIBUTION.md'
+      - '.github/workflows/validate-cad.yml'
+  pull_request:
+    paths:
+      - 'models/**'
+      - 'docs/**'
+      - 'tools/**'
+      - 'README.md'
+      - 'ATTRIBUTION.md'
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install -r tools/requirements-cad.txt
+      - run: python tools/validate_release.py

@@ -1,0 +1,67 @@
+name: Package Seizo Nexus CAD and documentation
+on:
+  push:
+    branches: [nexus-cad-release-20261016]
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: nexus-cad-package
+  cancel-in-progress: false
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      OPENBLAS_NUM_THREADS: '1'
+      OMP_NUM_THREADS: '1'
+      PYTHONUTF8: '1'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.sha }}
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - name: Restore byte-exact owner uploads
+        run: python tools/restore_uploads.py
+      - name: Install pinned CAD conversion tools
+        run: python -m pip install -r tools/requirements-cad.txt
+      - name: Convert and reopen all four STEP files
+        shell: bash
+        run: |
+          set -euo pipefail
+          python tools/convert_stl_to_step.py 2>&1 | tee cad-build.log
+          python tools/validate_release.py --record 2>&1 | tee cad-validation.log
+      - name: Commit validated files to candidate branch only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF" = refs/heads/nexus-cad-release-20261016
+          test "$(git ls-remote origin "$GITHUB_REF" | cut -f1)" = "$GITHUB_SHA"
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- models docs/images docs/geometry-validation.json
+          if git ls-files --error-unmatch tools/import_payload/01.stl.xz >/dev/null 2>&1; then
+            git rm -- tools/import_payload/*.xz
+          fi
+          git commit -m 'Publish original STL exports, validated faceted STEP solids and original CAD screenshot'
+          git push origin HEAD:refs/heads/nexus-cad-release-20261016
+          git rev-parse HEAD > candidate-commit.txt
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: seizo-nexus-cad-release
+          path: |
+            README.md
+            ATTRIBUTION.md
+            JOURNAL.md
+            BOM.csv
+            models/
+            docs/
+            tools/
+            package-verification.json
+            cad-build.log
+            cad-validation.log
+            candidate-commit.txt
+          retention-days: 30

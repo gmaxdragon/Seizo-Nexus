@@ -1,0 +1,12 @@
+{
+  "schema": "seizo-nexus-source-batch/v1",
+  "batch_date": "2026-10-16",
+  "unit_assumption": "1 STL coordinate unit = 1 millimetre; STL itself is unitless",
+  "screenshot": {"path":"docs/images/seizo-nexus-overview.png","sha256":"14d9b51428888c104a17fb35977ae5ac5c6eb2ecac1898a32e24e0ed9be4d772","bytes":122692},
+  "files": [
+    {"name":"Seizo Nexus.stl","payload":"01.stl.xz","sha256":"74ed1ffe3ff224d8d499a0bc957b03dfd08ed3fdc16a89851966c1df185c624e","bytes":52384,"triangles":1046,"components":1},
+    {"name":"Seizo Nexus (1).stl","payload":"02.stl.xz","sha256":"a116b62f56547dbbe03f8edf9de5298ffdb7570d274f04847e6a2d79c2066a26","bytes":31284,"triangles":624,"components":1},
+    {"name":"Seizo Nexus (2).stl","payload":"03.stl.xz","sha256":"4ad165c90e953dac520da76611b7e0f00b3088e4e7fd5c9b9428ce136dda8a98","bytes":92784,"triangles":1854,"components":8},
+    {"name":"Seizo Nexus (3).stl","payload":"04.stl.xz","sha256":"c31b66721f2fa47e02397d3a00b3e047473a825f454209b64d69889fb2c9b8a3","bytes":37584,"triangles":750,"components":2}
+  ]
+}
