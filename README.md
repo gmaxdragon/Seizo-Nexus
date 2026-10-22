@@ -14,6 +14,8 @@
 
 *The current design arranged in CAD. This is the original project screenshot, not a photograph of a completed printed workstation. It shows the wider design; the download batch below contains four supplied exports, not a verified inventory of every module in the picture.*
 
+![Additional Seizo Nexus exploded CAD view](docs/images/seizo-nexus-exploded.webp)
+
 ## The idea
 
 Seizo Nexus is my modular workstation project, designed around the practical problem of keeping a robotics workspace organized while the project itself keeps changing. Instead of making one fixed box, the design uses separate storage, mounting, holder, and display modules that can be rearranged around the work.
