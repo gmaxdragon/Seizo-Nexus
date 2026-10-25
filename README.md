@@ -16,6 +16,8 @@
 
 ![Additional Seizo Nexus exploded CAD view](docs/images/seizo-nexus-exploded.webp)
 
+> **CAD source status, 24 October 2026:** This repository contains verified STL files and faceted STEP conversions, but **not** the original native CAD source required by Half-Life. See the [exact native source fix](docs/NATIVE_CAD_SOURCE_CHECK_2026-10-24.md). Do not mark the checker passed or rename STEP files as Fusion archives. The owner's project narrative remains below unchanged.
+
 ## The idea
 
 Seizo Nexus is my modular workstation project, designed around the practical problem of keeping a robotics workspace organized while the project itself keeps changing. Instead of making one fixed box, the design uses separate storage, mounting, holder, and display modules that can be rearranged around the work.
