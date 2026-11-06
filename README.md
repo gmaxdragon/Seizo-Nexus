@@ -180,3 +180,10 @@ To suggest an improvement, open an issue with the export filename, the affected 
 ---
 
 **Seizo Nexus** · Vivaan Goel · CAD export batch documented October 16, 2026
+
+## Models used
+
+These are the 2 models I used:
+
+- Dovetail connectors (edited heavily): [Impossible Dovetail Puzzle Box - Free 3D Print Model - MakerWorld](https://makerworld.com/en/models/518613-impossible-dovetail-puzzle-box?from=search#profileId-434904)
+- Scissor lift (also edited heavily): [Lab Jack Print-in-Place](https://makerworld.com/en/models/2766818-lab-jack-print-in-place?from=search#profileId-3072591)
