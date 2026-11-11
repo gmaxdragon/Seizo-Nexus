@@ -6,6 +6,14 @@ This is Seizo Nexus. It's a massive modular stackable, sick building-block like 
 
 ![Additional Seizo Nexus exploded CAD view](docs/images/seizo-nexus-exploded.webp)
 
+## Bill of materials
+
+| Part | Qty | Unit price (USD) | Total (USD) | Buying link |
+| --- | ---: | ---: | ---: | --- |
+| PLA 2.0 Filament<br>3D printing the full cadded thing and ensuring it's printability after I sliced everything and verified filament amounts. | 3 | $11.39 | $34.17 | [SUNLU](https://store.sunlu.com/products/moq-6kg-pla-2-0-upgraded-pla-pla-plus-3d-printer-filament-1kg) |
+| Tax & shipping for the whole order | — | — | $9.99 | — |
+| **Total** | | | **$44.16** | |
+
 ## Credits
 
 - Dovetail connectors (edited heavily): [Impossible Dovetail Puzzle Box - Free 3D Print Model - MakerWorld](https://makerworld.com/en/models/518613-impossible-dovetail-puzzle-box?from=search#profileId-434904)
