@@ -41,7 +41,7 @@ def main() -> None:
     manifest = json.loads((ROOT / 'tools/source-manifest.json').read_text())
     records = []
     (ROOT / 'models/step').mkdir(parents=True, exist_ok=True)
-    (ROOT / 'docs').mkdir(exist_ok=True)
+    (ROOT / 'tools').mkdir(exist_ok=True)
     for item in manifest['files']:
         name = item['name']
         source = ROOT / 'models/stl' / name
@@ -142,7 +142,7 @@ def main() -> None:
                         'Original design intent, units, part names and assembly completeness'],
         'files': records,
     }
-    (ROOT / 'docs/geometry-validation.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
+    (ROOT / 'tools/geometry-validation.json').write_text(json.dumps(report, indent=2) + '\n', encoding='utf-8')
     print('All four source files preserved; four STEP files reopened and validated.', flush=True)
 
 

@@ -22,7 +22,7 @@ def sha(path: Path) -> str:
 
 def main() -> None:
     manifest = json.loads((ROOT / 'tools/source-manifest.json').read_text())
-    report = json.loads((ROOT / 'docs/geometry-validation.json').read_text())
+    report = json.loads((ROOT / 'tools/geometry-validation.json').read_text())
     assert len(manifest['files']) == len(report['files']) == 4
     assert {p.name for p in (ROOT/'models/stl').glob('*.stl')} == {x['name'] for x in manifest['files']}
     assert {p.stem for p in (ROOT/'models/step').glob('*.step')} == {Path(x['name']).stem for x in manifest['files']}
@@ -55,7 +55,7 @@ def main() -> None:
     assert sha(path) == image['sha256'] and path.stat().st_size == image['bytes']
     assert path.read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
     checked_links = 0
-    for relative in ('README.md','ATTRIBUTION.md','docs/BUILD_NOTES.md','docs/STEP_CONVERSION.md'):
+    for relative in ('README.md', 'ATTRIBUTION.md'):
         doc = ROOT/relative
         for target in re.findall(r'!?\[[^\]]*\]\(([^\s)]+)\)', doc.read_text(encoding='utf-8')):
             if target.startswith('#') or urlsplit(target).scheme:
