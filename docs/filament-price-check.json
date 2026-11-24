@@ -1,0 +1,35 @@
+{
+  "verified_on": "2026-11-24",
+  "currency": "USD",
+  "product": {
+    "name": "Anycubic PLA Basic 1.75 mm Black (#212721) / 1KG",
+    "sku": "AHPLBK-105",
+    "variant_id": "52972680151359",
+    "available": true,
+    "unit_price": 17.99,
+    "quantity": 2,
+    "line_total": 35.98,
+    "minimum_order_quantity": 1,
+    "quantity_increment": 1,
+    "product_url": "https://us.anycubic3d.com/products/pla-filament?variant=52972680151359",
+    "product_data_url": "https://us.anycubic3d.com/products/pla-filament.js",
+    "evidence": "Live product JSON: available true, price 1799 cents. Product HTML: quantity_rule min 1, max null, increment 1; matching variant structured data USD 17.99 and InStock."
+  },
+  "shipping": {
+    "destination": "Mainland United States (Dublin, California)",
+    "amount": 0,
+    "status": "Published shipping policy; not a checkout quote",
+    "source_url": "https://us.anycubic3d.com/pages/shipping-policy"
+  },
+  "sales_tax": {
+    "jurisdiction": "Dublin, California",
+    "rate": 0.1025,
+    "taxable_subtotal": 35.98,
+    "amount": 3.69,
+    "status": "Estimate, rounded to cents; not a checkout quote",
+    "rate_effective": "2026-10-01",
+    "source_url": "https://cdtfa.ca.gov/taxes-and-fees/rates.aspx"
+  },
+  "estimated_order_total": 39.67,
+  "order_placed": false
+}

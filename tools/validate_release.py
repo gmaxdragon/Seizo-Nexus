@@ -55,7 +55,7 @@ def main() -> None:
     assert sha(path) == image['sha256'] and path.stat().st_size == image['bytes']
     assert path.read_bytes().startswith(b'\x89PNG\r\n\x1a\n')
     checked_links = 0
-    for relative in ('README.md', 'ATTRIBUTION.md'):
+    for relative in ('README.md', 'ATTRIBUTION.md', 'docs/ASSEMBLY.md'):
         doc = ROOT/relative
         for target in re.findall(r'!?\[[^\]]*\]\(([^\s)]+)\)', doc.read_text(encoding='utf-8')):
             if target.startswith('#') or urlsplit(target).scheme:
@@ -66,11 +66,33 @@ def main() -> None:
             checked_links += 1
     assert sum(x['solids'] for x in results) == 12
     assert sum(x['faces'] for x in results) == 4274
+    assembly_report = json.loads((ROOT/'tools/assembly-validation.json').read_text())
+    fusion_source = assembly_report['source_provenance']['source']
+    fusion_path = ROOT/fusion_source['file']
+    assert sha(fusion_path) == fusion_source['sha256']
+    assert fusion_path.stat().st_size == fusion_source['bytes']
+    assembled_checks = []
+    for expected in assembly_report['exports']:
+        path = ROOT/'models/assembled'/expected['step_file']
+        assert sha(path) == expected['sha256']
+        shape = cq.importers.importStep(str(path)).val()
+        solids = shape.Solids()
+        assert shape.isValid() and all(s.isValid() for s in solids)
+        assert len(solids) == expected['solid_count']
+        measured_volume = sum(s.Volume() for s in solids)
+        source_volume = expected['source_body_volume_sum_mm3']
+        assert abs(measured_volume-source_volume)/source_volume < 1e-7
+        box = shape.BoundingBox()
+        measured_bounds = np.array([[box.xmin,box.ymin,box.zmin],[box.xmax,box.ymax,box.zmax]])
+        assert np.max(abs(measured_bounds-np.array(expected['bounds_mm']))) < 1e-5
+        assembled_checks.append({'file':expected['step_file'],'valid':True,'solids':len(solids),
+                                 'physical_fit_verified':False})
     result = {'schema':'seizo-nexus-package-check/v1', 'result':'pass', 'original_stl_files':4,
               'step_files':4, 'valid_step_solids':12, 'source_triangles':4274,
               'original_screenshot_verified':True, 'internal_links_checked':checked_links,
               'physical_fit_verified':False, 'parametric_history_recovered':False,
               'units':'1 STL coordinate unit = 1 mm is an assumption', 'checks':results,
+              'fusion_source_unchanged':True, 'assembled_review_files':assembled_checks,
               'files':{p.relative_to(ROOT).as_posix():sha(p) for directory in ('models','docs')
                        for p in sorted((ROOT/directory).rglob('*')) if p.is_file()}}
     if '--record' in sys.argv:
