@@ -1,4 +1,5 @@
 Item,Qty,Supplier,Cost/item,Total Cost,link
-Anycubic PLA Basic 1.75 mm 1 kg spool - Black,2,Anycubic,$17.99,$35.98,https://us.anycubic3d.com/products/pla-filament?variant=52972680151359
-Shipping to mainland USA,1,Anycubic,$0.00,$0.00,https://us.anycubic3d.com/pages/shipping-policy
-Estimated sales tax (Dublin CA 10.25%),1,California,$3.69,$3.69,https://cdtfa.ca.gov/taxes-and-fees/rates.aspx
+PLA+ Refill 1.75 mm 1 kg - Black,1,Anycubic,$17.99,$17.99,https://us.anycubic3d.com/products/pla-plus-refill?variant=52971853709631
+Flex TPU Air 85A 1.75 mm 1 kg - White (US),1,Siraya Tech,$42.99,$42.99,https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament?variant=42692714627181
+Shipping to mainland USA - Anycubic,1,Anycubic,$0.00,$0.00,https://us.anycubic3d.com/pages/shipping-policy
+Shipping to US non-remote areas - Siraya Tech,1,Siraya Tech,$0.00,$0.00,https://siraya.tech/policies/shipping-policy

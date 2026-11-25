@@ -1,35 +1,89 @@
 {
   "verified_on": "2026-11-24",
+  "verification_timezone": "America/Mazatlan",
   "currency": "USD",
-  "product": {
-    "name": "Anycubic PLA Basic 1.75 mm Black (#212721) / 1KG",
-    "sku": "AHPLBK-105",
-    "variant_id": "52972680151359",
-    "available": true,
-    "unit_price": 17.99,
-    "quantity": 2,
-    "line_total": 35.98,
-    "minimum_order_quantity": 1,
-    "quantity_increment": 1,
-    "product_url": "https://us.anycubic3d.com/products/pla-filament?variant=52972680151359",
-    "product_data_url": "https://us.anycubic3d.com/products/pla-filament.js",
-    "evidence": "Live product JSON: available true, price 1799 cents. Product HTML: quantity_rule min 1, max null, increment 1; matching variant structured data USD 17.99 and InStock."
-  },
-  "shipping": {
-    "destination": "Mainland United States (Dublin, California)",
-    "amount": 0,
-    "status": "Published shipping policy; not a checkout quote",
-    "source_url": "https://us.anycubic3d.com/pages/shipping-policy"
-  },
+  "selection_status": "Provisional material budget; printer compatibility and final tax are not verified",
+  "products": [
+    {
+      "supplier": "Anycubic",
+      "name": "PLA+ Refill 1.75 mm Black (#212721) / 1KG",
+      "sku": "AHPLPBK-A108",
+      "variant_id": "52971853709631",
+      "available": true,
+      "unit_price": 17.99,
+      "quantity": 1,
+      "line_total": 17.99,
+      "net_filament_weight_kg": 1,
+      "filament_diameter_mm": 1.75,
+      "minimum_order_quantity": 1,
+      "quantity_increment": 1,
+      "product_url": "https://us.anycubic3d.com/products/pla-plus-refill?variant=52971853709631",
+      "product_data_url": "https://us.anycubic3d.com/products/pla-plus-refill.js",
+      "evidence": "Live product JSON: available true, price 1799 cents, Black / 1KG. Selected-variant HTML: quantity_rule min 1, max null, increment 1; page title identifies 1.75 mm filament.",
+      "spool_requirement": "Spool-free refill requires a compatible reusable spool. Existing spool availability is unverified; no additional spool is included in this budget."
+    },
+    {
+      "supplier": "Siraya Tech",
+      "name": "Flex TPU Air 85A Filament - US / 1KG / White",
+      "sku": "ST3021",
+      "variant_id": "42692714627181",
+      "ship_to_variant": "US",
+      "available": true,
+      "unit_price": 42.99,
+      "quantity": 1,
+      "line_total": 42.99,
+      "net_filament_weight_kg": 1,
+      "filament_diameter_mm": 1.75,
+      "minimum_order_quantity": 1,
+      "quantity_increment": 1,
+      "product_url": "https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament?variant=42692714627181",
+      "product_data_url": "https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament.js",
+      "evidence": "Live product JSON: available true, price 4299 cents, US / 1KG / White. Selected-variant HTML: quantity_rule min 1, max null, increment 1 and in-stock inventory.",
+      "material_type": "Actively foaming TPU",
+      "unfoamed_hardness": "Approximately Shore 85A; not raw Shore 65A filament",
+      "advertised_printed_hardness": "Shore 65A-82A after controlled foaming; conditional on temperature, printer, nozzle and calibration",
+      "manual_printed_hardness_range": "Approximately Shore 65A-85A depending on print temperature and foaming",
+      "softest_manual_setting": {
+        "approximate_printed_shore_a": 65,
+        "nozzle_temperature_c": 270,
+        "starting_flow_percent": [
+          50,
+          55
+        ],
+        "calibration_required": true
+      },
+      "printer_compatibility": "Not verified",
+      "manual_url": "https://siraya.tech/pages/siraya-tech-tpu-air-user-manual",
+      "tds_url": "https://siraya.tech/pages/siraya-tech-flex-tpu-air-tds"
+    }
+  ],
+  "shipping": [
+    {
+      "supplier": "Anycubic",
+      "destination": "Mainland United States",
+      "amount": 0,
+      "status": "Published shipping policy; not an address-specific checkout quote",
+      "source_url": "https://us.anycubic3d.com/pages/shipping-policy"
+    },
+    {
+      "supplier": "Siraya Tech",
+      "destination": "US non-remote areas",
+      "amount": 0,
+      "status": "Published policy lists USD 0 for 0.1-24 kg gross weight; one 1 kg filament roll has 1.5 kg shipping weight. Not an address-specific checkout quote.",
+      "source_url": "https://siraya.tech/policies/shipping-policy"
+    }
+  ],
   "sales_tax": {
-    "jurisdiction": "Dublin, California",
-    "rate": 0.1025,
-    "taxable_subtotal": 35.98,
-    "amount": 3.69,
-    "status": "Estimate, rounded to cents; not a checkout quote",
-    "rate_effective": "2026-10-01",
-    "source_url": "https://cdtfa.ca.gov/taxes-and-fees/rates.aspx"
+    "status": "deferred by user; excluded"
   },
-  "estimated_order_total": 39.67,
+  "material_units": 2,
+  "total_net_filament_weight_kg": 2,
+  "materials_subtotal": 60.98,
+  "shipping_total": 0,
+  "total_before_tax": 60.98,
+  "budget_cap": 65,
+  "remaining_before_tax": 4.02,
+  "funding_status": "Not confirmed; final tax and any missing reusable spool are excluded",
+  "purchase_status": "NoPurchase",
   "order_placed": false
 }

@@ -1,49 +1,38 @@
 # Seizo Nexus
 
-Seizo Nexus is a modular desk organizer with a Fusion F3D source file. The assembled configuration below shows how the base, U-shaped shell with rails, sliding drawer, and front Seizo badge fit together.
+This is Seizo Nexus. It's a massive modular stackable, sick building-block like holder for most things I have. I have spent a week designing this and a ton of time too. The modules connect by 2 or 1 dovetail connectors depending on the piece. It has a small connectable 4 sided baseplate for connecting parts, sick covers for sides, a big main connector which has 3 walls and a scissor lift to hodl things in place, and a few modules too like a headphone, surge protector, logo, waterbottle, jumper wires, nametags, vertical boxes, small parts, an arduino uno, an arduino nano, and a ton of more unique and nice additions. I knew that a big problem with boxes currently is that they cannot fit and adjust so I made this. I was considering other mechanisms like some steps or a simple push, but I determined that the scissor lift is the best blend of reliability, coolness, and functionality. A lot of inspiration from this came from Legos and Youtube modular boxes too.
 
-![Assembled Seizo Nexus desk organizer showing the base, U-shaped shell, sliding drawer, and front badge](docs/images/seizo-nexus-assembled.png)
+![Seizo Nexus CAD overview showing the modular enclosure, panels, mounting frames, holders, and Seizo logo displays](docs/images/seizo-nexus-overview.png)
 
-## CAD files and assembly
+![Additional Seizo Nexus exploded CAD view](docs/images/seizo-nexus-exploded.webp)
 
-| File | Purpose |
-| --- | --- |
-| [Assembled model (.step)](models/assembled/Seizo_Nexus_Assembled.step) | Review the desk organizer with its parts placed together. |
-| [Stacked example (.step)](models/assembled/Seizo_Nexus_Stacked_Example.step) | The same assembly with a Seizo logo display seated on its upper rails. |
-| [Original Fusion design (.f3d)](models/Seizo%20Nexus.f3d) | Genuine Fusion source document, retained in its original form. |
-| [Assembly notes](docs/ASSEMBLY.md) | Component placement, source provenance, and validation details. |
-| [Original STEP exports](models/step/) and [STL exports](models/stl/) | Separate source exports retained for reference. |
+## CAD files
 
-The assembled STEP files are produced from the boundary representation in the genuine F3D source. The original Fusion document remains the source; the new assembled deliverables are the STEP files linked above. These review poses retain small source interferences at the dovetails and badge, detailed in the assembly notes. Physical print fit has not been verified.
+- [Original Fusion source (.f3d)](models/Seizo%20Nexus.f3d)
+- [Original STEP part exports](models/step/)
+- [Original STL part exports](models/stl/)
 
-![Stacked Seizo Nexus assembly with the Seizo logo display seated on the upper rails](docs/images/seizo-nexus-stacked.png)
-
-**Hack Club target: Tier 2**, following the review feedback. The existing [journal](JOURNAL.md) is preserved as a historical record. This revision adds no time-tracking or timelapse evidence.
+**Hack Club review target: Tier 2.** [Historical journal](JOURNAL.md).
 
 ## Bill of materials
 
-Prices checked **2026-11-24**, in USD. The filament link selects the **black 1 kg spool** at the listed unit price.
+Prices checked **2026-11-24**, in USD. **Tax is excluded and will be added later.**
 
 | Part | Qty | Unit price (USD) | Total (USD) | Buying link |
 | --- | ---: | ---: | ---: | --- |
-| Anycubic PLA Basic, black, 1.75 mm, 1 kg spool | 2 | $17.99 | $35.98 | [Exact Anycubic variant](https://us.anycubic3d.com/products/pla-filament?variant=52972680151359) |
-| Shipping to mainland USA | 1 | $0.00 | $0.00 | [Anycubic shipping policy](https://us.anycubic3d.com/pages/shipping-policy) |
-| Estimated sales tax, Dublin CA, 10.25% | 1 | $3.69 | $3.69 | [California tax rates](https://cdtfa.ca.gov/taxes-and-fees/rates.aspx) |
-| **Estimated order total** | | | **$39.67** | |
+| Anycubic PLA+ Refill, black, 1.75 mm, 1 kg | 1 | $17.99 | $17.99 | [Exact refill variant](https://us.anycubic3d.com/products/pla-plus-refill?variant=52971853709631) |
+| Siraya Tech Flex TPU Air 85A, white, 1.75 mm, 1 kg, US stock | 1 | $42.99 | $42.99 | [Exact TPU variant](https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament?variant=42692714627181) |
+| Anycubic mainland US shipping | 1 | $0.00 | $0.00 | [Shipping policy](https://us.anycubic3d.com/pages/shipping-policy) |
+| Siraya Tech US non-remote shipping | 1 | $0.00 | $0.00 | [Shipping policy](https://siraya.tech/policies/shipping-policy) |
+| **Subtotal excluding tax** | | | **$60.98** | |
 
-The two rolls are a **2 kg purchase budget cap**. Filament consumption for this assembly has not been measured in a slicer. CAD display colors identify components and do not require multiple filament colors. Sales tax is an estimate for Dublin, California; the final charge is determined at checkout.
+Material quantity: **one refill and one spool, 2 kg total**. The refill requires a compatible reusable spool; a new spool is not included in this budget.
 
-The machine-readable budget is in [BOM.csv](BOM.csv). The [price check](docs/filament-price-check.json) records the exact variant, minimum order quantity of one, and calculation sources.
+The TPU Air's stated printed hardness is approximately **65A–82A**, depending on foaming settings. Its starting grade is 85A. Approximately 65A requires 270°C and calibrated flow according to the manufacturer. Compatibility with the intended printer has not been established.
 
-## Optional modules and source overview
+Tier 2's $65 grant leaves **$4.02 before tax or any extra charges**. The final funded total remains pending. Shipping uses the sellers' published US policies, not a checkout quote. Filament quantity is a purchase plan, not a verified sliced consumption figure.
 
-The broader source design explores a stackable, building-block-style organizer with one or two dovetail connections per module. It includes a four-sided baseplate, side covers, a three-wall connector, and a scissor-lift concept for adjustable storage. Optional holders cover headphones, a surge protector, a water bottle, jumper wires, name tags, vertical boxes, small parts, Arduino Uno and Nano boards, and logo displays. The original inspiration came from LEGO and modular-box projects on YouTube.
-
-These original overview images show the wider collection of source parts. The assembled desk-organizer configuration is shown at the top of this page.
-
-![Original Seizo Nexus CAD overview showing the modular enclosure, panels, mounting frames, holders, and Seizo logo displays](docs/images/seizo-nexus-overview.png)
-
-![Original Seizo Nexus exploded CAD view](docs/images/seizo-nexus-exploded.webp)
+[BOM.csv](BOM.csv) contains the itemized budget. [Price verification](docs/filament-price-check.json) records variants, stock, minimum quantities, shipping sources, and material requirements.
 
 ## Credits
 
