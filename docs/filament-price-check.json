@@ -23,38 +23,30 @@
       "spool_requirement": "Spool-free refill requires a compatible reusable spool. Existing spool availability is unverified; no additional spool is included in this budget."
     },
     {
-      "supplier": "Siraya Tech",
-      "name": "Flex TPU Air 85A Filament - US / 1KG / White",
-      "sku": "ST3021",
-      "variant_id": "42692714627181",
-      "ship_to_variant": "US",
+      "supplier": "Anycubic",
+      "name": "TPU 95A Black (#212721) / 1KG",
+      "sku": "HTPBK-101",
+      "variant_id": "52971866128703",
       "available": true,
-      "unit_price": 42.99,
+      "unit_price": 23.99,
       "quantity": 1,
-      "line_total": 42.99,
+      "line_total": 23.99,
       "net_filament_weight_kg": 1,
-      "filament_diameter_mm": 1.75,
       "minimum_order_quantity": 1,
       "quantity_increment": 1,
-      "product_url": "https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament?variant=42692714627181",
-      "product_data_url": "https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament.js",
-      "evidence": "Live product JSON: available true, price 4299 cents, US / 1KG / White. Selected-variant HTML: quantity_rule min 1, max null, increment 1 and in-stock inventory.",
-      "material_type": "Actively foaming TPU",
-      "unfoamed_hardness": "Approximately Shore 85A; not raw Shore 65A filament",
-      "advertised_printed_hardness": "Shore 65A-82A after controlled foaming; conditional on temperature, printer, nozzle and calibration",
-      "manual_printed_hardness_range": "Approximately Shore 65A-85A depending on print temperature and foaming",
-      "softest_manual_setting": {
-        "approximate_printed_shore_a": 65,
-        "nozzle_temperature_c": 270,
-        "starting_flow_percent": [
-          50,
-          55
-        ],
-        "calibration_required": true
-      },
+      "product_url": "https://us.anycubic3d.com/products/tpu-filament?variant=52971866128703",
+      "product_data_url": "https://us.anycubic3d.com/products/tpu-filament.js",
+      "evidence": "Live product JSON: available true, price 2399 cents, Black / 1KG. Selected-variant HTML: quantity_rule min 1, max null, increment 1; quantity input minimum 1.",
+      "material_type": "Thermoplastic polyurethane (TPU)",
+      "nominal_hardness_shore_a": 95,
+      "selection_reason": "User requested Anycubic TPU. Anycubic states that its TPU 68D has higher hardness and stiffness than TPU 95A, making 95A the softer of these Anycubic options. This is not a market-wide softest-material claim.",
+      "hardness_comparison_source_url": "https://us.anycubic3d.com/products/tpu-68d",
       "printer_compatibility": "Not verified",
-      "manual_url": "https://siraya.tech/pages/siraya-tech-tpu-air-user-manual",
-      "tds_url": "https://siraya.tech/pages/siraya-tech-flex-tpu-air-tds"
+      "feed_path_note": "Anycubic says TPU 95A can be dried in ACE Pro or ACE 2 Pro but should use an external spool holder instead of those units for printing.",
+      "feed_path_source_urls": [
+        "https://wiki.anycubic.com/en/fdm-3d-printer/kobra-3-combo/ace-pro-notes",
+        "https://wiki.anycubic.com/en/fdm-3d-printer/ace-2-pro/warm-tips"
+      ]
     }
   ],
   "shipping": [
@@ -64,13 +56,6 @@
       "amount": 0,
       "status": "Published shipping policy; not an address-specific checkout quote",
       "source_url": "https://us.anycubic3d.com/pages/shipping-policy"
-    },
-    {
-      "supplier": "Siraya Tech",
-      "destination": "US non-remote areas",
-      "amount": 0,
-      "status": "Published policy lists USD 0 for 0.1-24 kg gross weight; one 1 kg filament roll has 1.5 kg shipping weight. Not an address-specific checkout quote.",
-      "source_url": "https://siraya.tech/policies/shipping-policy"
     }
   ],
   "sales_tax": {
@@ -78,11 +63,11 @@
   },
   "material_units": 2,
   "total_net_filament_weight_kg": 2,
-  "materials_subtotal": 60.98,
+  "materials_subtotal": 41.98,
   "shipping_total": 0,
-  "total_before_tax": 60.98,
+  "total_before_tax": 41.98,
   "budget_cap": 65,
-  "remaining_before_tax": 4.02,
+  "remaining_before_tax": 23.02,
   "funding_status": "Not confirmed; final tax and any missing reusable spool are excluded",
   "purchase_status": "NoPurchase",
   "order_placed": false

@@ -21,16 +21,15 @@ Prices checked **2026-11-24**, in USD. **Tax is excluded and will be added later
 | Part | Qty | Unit price (USD) | Total (USD) | Buying link |
 | --- | ---: | ---: | ---: | --- |
 | Anycubic PLA+ Refill, black, 1.75 mm, 1 kg | 1 | $17.99 | $17.99 | [Exact refill variant](https://us.anycubic3d.com/products/pla-plus-refill?variant=52971853709631) |
-| Siraya Tech Flex TPU Air 85A, white, 1.75 mm, 1 kg, US stock | 1 | $42.99 | $42.99 | [Exact TPU variant](https://siraya.tech/products/flex-tpu-air-65a-82a-foaming-flexible-filament?variant=42692714627181) |
+| Anycubic TPU 95A, black, 1.75 mm, 1 kg spool | 1 | $23.99 | $23.99 | [Exact TPU variant](https://us.anycubic3d.com/products/tpu-filament?variant=52971866128703) |
 | Anycubic mainland US shipping | 1 | $0.00 | $0.00 | [Shipping policy](https://us.anycubic3d.com/pages/shipping-policy) |
-| Siraya Tech US non-remote shipping | 1 | $0.00 | $0.00 | [Shipping policy](https://siraya.tech/policies/shipping-policy) |
-| **Subtotal excluding tax** | | | **$60.98** | |
+| **Subtotal excluding tax** | | | **$41.98** | |
 
 Material quantity: **one refill and one spool, 2 kg total**. The refill requires a compatible reusable spool; a new spool is not included in this budget.
 
-The TPU Air's stated printed hardness is approximately **65A–82A**, depending on foaming settings. Its starting grade is 85A. Approximately 65A requires 270°C and calibrated flow according to the manufacturer. Compatibility with the intended printer has not been established.
+**TPU 95A is the softer of Anycubic's 95A and 68D options.** Shore A and Shore D use different hardness scales. This budget uses one standard TPU 95A spool.
 
-Tier 2's $65 grant leaves **$4.02 before tax or any extra charges**. The final funded total remains pending. Shipping uses the sellers' published US policies, not a checkout quote. Filament quantity is a purchase plan, not a verified sliced consumption figure.
+Tier 2's $65 grant leaves **$23.02 before tax or any extra charges**. The final funded total remains pending. Shipping uses Anycubic's published mainland US policy, not a checkout quote. Filament quantity is a purchase plan, not a verified sliced consumption figure.
 
 [BOM.csv](BOM.csv) contains the itemized budget. [Price verification](docs/filament-price-check.json) records variants, stock, minimum quantities, shipping sources, and material requirements.
 
