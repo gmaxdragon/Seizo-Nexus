@@ -6,11 +6,11 @@
 > [!NOTE]
 > This devlog is mirrored from [Half Life](https://halflife.hackclub.com) ([open the project](https://halflife.hackclub.com/projects/cmv5u1dte0krq01n05qgxulbm)). Editing it here will not change the platform's copy, and the next sync overwrites this file.
 
-> It's a 3d printable modular workstation for robotics and anything in general and interchangeable drawers and a large logo for the arm I'm building.
+> It's a 3d printable modular workstation for robotics and anything in general and interchangeable drawers and a large logo for the arm I'm building. TPU is needed for making the base of it soft and be able to hold it's position better and stick.
 
 | Week | Tier | Hours logged | Entries |
 | --- | --- | --- | --- |
-| Week 2 | Tier 3 | 26h | 7 |
+| Week 2 | Tier 2 | 26h | 7 |
 
 ## Contents
 
@@ -28,7 +28,7 @@
 
 **5h**
 
-I worked insanely hard on this so far. At first I was thinking and designing a design based on 2 lead screws that I turned and that was a box that could have a dovetail connector and boom, done. That came with some major engineering challenges though like how could they both shrink? As a result, I switched to just one lead screw. However, I felt like that would take too much time also to make and it might not be too reliable. As a result, I switched to a sideways scissor lift that I could just add in a slidable drawer system that had 2 sideways panels holding it down in one big area. I could also have multiple sizes of boxes for different things. As a result, I made it super simple, kept the tolerances in mind assuming it's been pre-tuned and then I added a dovetail connector and made just the drawers. Some superglue may be required as I can't iterate easily.
+I worked insanely hard on this so far. At first I was thinking and designing a design based on 2 lead screws that I turned and that was a box that could have a dovetail connector and boom, done. That came with some major engineering challenges though like how could they both shrink? As a result, I switched to just one lead screw. However, I felt like that would take too much time also to make and it might not be too reliable. As a result, I switched to a sideways scissor lift that I could just add in a slidable drawer system that had 2 sideways panels holding it down in one big area. I could also have multiple sizes of boxes for different things. As a result, I made it super simple, kept the tolerances in mind assuming it's been pre-tuned and then I added a dovetail connector and made just the drawers. Some superglue may be required as I can't iterate easily. 
 
 The reason I'm not using Onshape like most people would is that I have exponentially more experience with Tinkercad than Onshape and I feel like for me, Onshape would be extremely more frustrating than Tinkercad so that's why I'm using Tinkercad. It was a ton of designing and thinking and testing.
 
@@ -48,9 +48,9 @@ Also, to save myself a few headaches, I'm using a premade scissor lift from Make
 
 **2h**
 
-I designed a ton and cadded out v1 of the base holder that makes it more modular. It uses dovetail connectors additionally and I might add silicone feet that's sticky in the BOM but it looks good and can stack and connect pretty well. I took inspiration from a lot of kids toys for modular play areas and made just the modular part that connects to the drawer from the last session.
+I designed a ton and cadded out v1 of the base holder that makes it more modular. It uses dovetail connectors additionally and I might add silicone feet that's sticky in the BOM but it looks good and can stack and connect pretty well. I took inspiration from a lot of kids toys for modular play areas and made just the modular part that connects to the drawer from the last session. 
 
-![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/22008da08f467d458021329b6b64adb157e3afb2ce1e7160dc164cd385b9092c.png)
+![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/22008da08f467d458021329b6b64adb157e3afb2ce1e7160dc164cd385b9092c.png)  
 
 ![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/9c7bf1070bb1058f2f4865a7b705f259560130e674ace319b07b7fc07a726cfd.png)
 
@@ -70,7 +70,7 @@ I made a small holder for a surge protector I'm using. It uses the same scissor 
 
 **5h**
 
-I absolutely locked in. I made the logo and put it on everything and even made a stand for a slide on logo, I cadded the modular nametag section which took FOREVER to make, I'm not sure if I mentioned this before but I made the tiny version too for a surge protector, and cleaned up everything. This took so long! Designing these stuff take forever and making them takes even longer and cleaning them also takes a while.
+I absolutely locked in. I made the logo and put it on everything and even made a stand for a slide on logo, I cadded the modular nametag section which took FOREVER to make, I'm not sure if I mentioned this before but I made the tiny version too for a surge protector, and cleaned up everything. This took so long! Designing these stuff take forever and making them takes even longer and cleaning them also takes a while. 
 
 ![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/89271cbbb899e61d2baa4387521007cd503ec56068d691ab3d80cdc0d2de42f2.png)
 
@@ -86,7 +86,7 @@ I absolutely locked in. I made the logo and put it on everything and even made a
 
 **4h**
 
-At first I was heavily designing a lock that used a padlock system to close but in the end it took way too long and didn't fit with my current design. As a result, I spent longer designing a cover for the shelves for it that look pretty cool and I refined the placement of some things. Also I added a keychain hole for some reason to everything.
+At first I was heavily designing a lock that used a padlock system to close but in the end it took way too long and didn't fit with my current design. As a result, I spent longer designing a cover for the shelves for it that look pretty cool and I refined the placement of some things. Also I added a keychain hole for some reason to everything. 
 ![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/d52f6a5cc7377f65b20be773be06209501c229f0cf35771a45ec28bf3366b173.png)
 
 ![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/e6b85dc902174307e97e9dfc4bd855df6037e6fba2addac57c1004e713ebbfe1.png)
@@ -98,7 +98,7 @@ At first I was heavily designing a lock that used a padlock system to close but 
 
 **6h**
 
-I made a ton of modules. At first I was really confused what to do as I made everything I needed to so I was messing around with more display stuff for an hour or two but then I realized that I needed something actually useful. I researched a ton of the most useful things people need to hold their stuff and designed 3 modules that I put a ton of hard work into and researching other models and modifying it quite a bit. Take a look! Thank you so much for this whole journey!
+I made a ton of modules. At first I was really confused what to do as I made everything I needed to so I was messing around with more display stuff for an hour or two but then I realized that I needed something actually useful. I researched a ton of the most useful things people need to hold their stuff and designed 3 modules that I put a ton of hard work into and researching other models and modifying it quite a bit. Take a look! Thank you so much for this whole journey! 
 
 ![image](https://halflife.hackclub-assets.com/sessions/1cjBC8H80sSoyKk4EDv7XmS5Kk83ydwd/38eb290ac25637c53f4018dec7e8c186f3a440df827020fa508460db409da266.png)
 
