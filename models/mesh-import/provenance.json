@@ -1,0 +1,26 @@
+{
+  "schema": "seizo-nexus-mesh-import/v1",
+  "exported_date_local": "2026-11-27",
+  "source_stl": {
+    "path": "Seizo Nexus (9).stl",
+    "sha256": "40a4b22c5ebab239d7ec7c2dcd44215bfe626b198f6807144fdbacb8da160342",
+    "bytes": 1717784
+  },
+  "fusion_archive": {
+    "path": "Seizo Nexus (9) - Mesh Import.f3d",
+    "sha256": "f1d138e507da4cd146812a58bd9044b56cb456b6d209ac82f5d6574bd18ab15d",
+    "bytes": 1931059
+  },
+  "method": "Autodesk Fusion Insert Mesh, then Autodesk Fusion Archive export",
+  "geometry_origin": "STL mesh",
+  "units": "millimetres selected on import; physical dimensions not independently verified",
+  "original_parametric_history_restored": false,
+  "native_source_replacement": false,
+  "halflife_acceptance_confirmed": false,
+  "tinkercad_history_transfer_warning": "Shapes highlighted with see-through orange will not transfer.",
+  "archive_integrity": {
+    "entries_checked": 30,
+    "all_uncompressed_sizes_and_crc32_verified": true
+  },
+  "fusion_reopen_verified": false
+}
